@@ -120,7 +120,7 @@ color: white;
   width: 100%; 
   object-fit: cover;
   transform: scaleX(-1);
-  animation: imganimation 0.5s linear ;
+  animation: imganimation 0.5s linear;
 }
 
 @keyframes imganimation {

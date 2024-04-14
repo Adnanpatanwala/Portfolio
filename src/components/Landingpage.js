@@ -67,12 +67,13 @@ const Landingpage = () => {
 
 const Wrapper = styled.div`
  
- .landing-page{
-    height: calc(100vh - 60px);
+ .landing-page{ 
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    height: calc(100vh - 60px);
+    min-height: 600px;
 
 }
 .backdrop{
@@ -82,7 +83,7 @@ const Wrapper = styled.div`
     transform: scaleX(-1);
     height: 100vh;
 }
-.content{    
+.content{   
     display: grid; 
     width: 80%;  
     align-items: center;
@@ -191,6 +192,52 @@ const Wrapper = styled.div`
 } 
 .backdrop{
     height: 100%;
+}
+
+
+@media screen and (max-width:767px){
+    .content{
+        display: block;
+        margin: auto;
+        margin-top: 120px;
+        h4{
+            font-size: 16px;
+        }
+    }
+    .intro-content li{
+        font-size: 25px;
+    }
+    .desc{
+        font-size: 14px;
+    }
+    .connect-btn{
+        font-size: 16px;
+    }
+    .portfolio{
+        width: 70%; 
+    }
+    .right-content{
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .follow-icons li{
+        font-size: 16px;
+    } 
+    .shape-1{
+        top: 60px; 
+        width: 50px;
+    }
+    .shape-3{
+        top: 5px; 
+        width: 30%;
+        left: 30%;
+    }
+    .follow-container{
+        margin: auto 15px;
+    }
+    .backdrop{
+        display: none;
+    }
 }
 `
 

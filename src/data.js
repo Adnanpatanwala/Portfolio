@@ -52,6 +52,12 @@ export const projects = [
 ]
 
  export const experience = [
+     {
+         id:3,
+         date:"18-03-2024 - 15-09-2024",
+         name:"Shypbuddy",
+         designation:"Frontend Developer"
+     },
     {
         id:1,
         date:"20-09-2023 - 20-06-2024",

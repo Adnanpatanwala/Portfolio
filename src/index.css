@@ -20,7 +20,13 @@ body{
  
 
 .container-fluid{
-  margin: 0px 30px !important;
+  margin: 0px 30px ;
+}
+
+@media screen and (max-width:767px) {
+  .container-fluid {
+    margin: 0px 10px;
+  }
 }
 
 .btn{
@@ -29,17 +35,17 @@ body{
 }
 
 .page{
- height: calc(100vh - 60px);  
+ min-height: calc(100vh - 40px);  
 }
 
 html{
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; */
 }
 
  .container-fluid,.another-effect{
-   scroll-snap-align: center;
+   /* scroll-snap-align: center; */
   } 
   .parallel-effect{
-    height: 100vh;
+    /* height: 100vh; */
   }

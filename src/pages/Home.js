@@ -8,7 +8,7 @@ const Home = () => {
     <Wrapper> 
         <Landingpage/>
         <SkillsandEpx/>
-        <FeaturedProducts/>
+        {/* <FeaturedProducts/> */}
     </Wrapper>
   )
 }

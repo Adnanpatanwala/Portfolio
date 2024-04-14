@@ -137,4 +137,45 @@ font-weight: 600;
     font-weight: 200;
     text-align: center;
 }  
+
+@media screen and (max-width:767px) {
+    .footer-heading{
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer-links{
+        padding: 2px 5px;
+    }
+    .navigation-container{
+        gap: 5px;
+        justify-content: center;
+    }
+    .follow-icons{ 
+        justify-content: center;
+    }
+    .footer-container{
+        display: block;
+    }
+    .right-sidefooter{
+        margin-top: 15px;
+        h2{
+            font-size: 16px;
+        }
+        h4{
+            font-size: 14px;
+        }
+    }
+    .input-newsletter input{
+        padding: 5px 10px;
+        font-size: 12px;
+        outline: none;
+    }
+    .input-newsletter button{
+        font-size: 12px;
+        padding: 5px 10px;
+    } 
+}
+
+
+
 `;

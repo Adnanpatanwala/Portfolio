@@ -73,6 +73,7 @@ const About = () => {
 export default About;
 
 const Wrapper  = styled.div`
+ 
 color: white; 
 @keyframes title {
    0%{ 
@@ -120,7 +121,7 @@ color: white;
   width: 100%; 
   object-fit: cover;
   transform: scaleX(-1);
-  animation: imganimation 0.5s linear;
+  animation: imganimation 0.5s linear ;
 }
 
 @keyframes imganimation {
@@ -145,7 +146,7 @@ color: white;
   z-index: -1;
 }
 .about-outer{
-  height: 623px;
+  height: 500px;
   margin: 30px; 
 }
 .quote{ 
@@ -238,7 +239,7 @@ color: white;
   }
    
   .third-main-container{
-    height: 100vh;
+    height: 400px;
   }
 
   .third-container{
@@ -252,5 +253,92 @@ color: white;
     font-size: 60px;
     font-weight: 300;
     color: #fa8094;
+  }
+
+  
+ 
+
+
+  @media screen and (max-width:767px) {
+    .about-container{ 
+      grid-template-columns: 1fr;
+      margin: auto;
+      margin: 15px;
+    }
+    .about-outer{
+      height: 80vh;
+    }
+    .title h2{
+      font-size: 60px;
+      display: block;
+      margin: auto;
+      min-height: 100px;
+
+    }
+    .about-content,.cooking{
+      margin: 0px;
+    }
+    .about-content{
+      width: 100%;
+    }
+    .right-about{
+      width: 100%;
+    }
+    .about-para{
+      font-size: 14xpx;
+    }
+    .quote{
+      font-size: 18px;
+    }
+    .cooking{
+      gap: 5px;
+      margin-top: 20px;
+      justify-content: center;
+      .icon-quto{
+        font-size: 50px;
+        margin-top: 10px;
+      }
+    }
+    .right-about img{
+      margin-top: 30px;
+       
+    }
+    .about-list{
+      display: block; 
+    }
+    .left-about,.answer{
+      padding: 20px 15px;
+      font-size: 14px;
+      margin: 10px 0px;
+    }
+    .left-about{
+      background-color: #474973 !important; 
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      display: inline-block;
+      box-shadow: 0px 0px 5px #474973;
+    }
+    .answer{
+      border-top-left-radius:50px;
+      border-bottom-left-radius: 50px;
+      background-color: var(--bodycolor) !important;
+      border: 1px solid #fa8094;
+      margin-left: 30px;
+      padding-left: 30px;
+      box-shadow: 0px 0px 5px #fa8094;
+    }
+    .third-container{ 
+      text-align: center;
+      font-size: 30px;
+    }
+    @keyframes title {
+   0%{ 
+     margin-left: -100px;
+    }
+    100%{  
+      margin-left: 0px;
+ 
+  }
+}
   }
 ` 

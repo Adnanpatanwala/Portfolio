@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Contact = () => {
   return ( 
-    <Wrapper className='page'>
+    <Wrapper className='page' >
       <div className="formbold-main-wrapper"> 
   <div className="formbold-form-wrapper">
     <form  method="POST">

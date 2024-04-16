@@ -6,20 +6,16 @@ import { PiArrowElbowRightDownDuotone } from "react-icons/pi";
 const aboutdata = [
   {
     title:"who am i",
-    answer:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem neque esse maxime voluptatum magnam ipsa!"
+    answer:"I am a BE graduate in Information Technology with a passion for web development.",
   },
   {
-    title:"who am i",
-    answer:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem neque esse maxime voluptatum magnam ipsa!"
+    title:"Experience",
+    answer: "As a UI Developer at Arcitech, I converted modern, mobile-responsive designs into web applications. At Shypdubby, I focused on frontend development, collaborating with designers and backend developers to deliver engaging user interfaces."
   },
   {
-    title:"who am i",
-    answer:"Lorem ipsum dolor sit, amet consectetur adLorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem neque esse maxime voluptatum magnam ipsa!ipisicing elit. Dolorem neque esse maxime voluptatum magnam ipsa!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem neque esse maxime voluptatum magnam ipsa!"
-  },
-  {
-    title:"who am i",
-    answer:"Lorem ipsum dolor sit, amet consectetur adLorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem neque esse maxime voluptatum magnam ipsa!ipisicing elit. Dolorem neque esse maxime voluptatum magnam ipsa!"
-  },
+    title:"Career Goals",
+    answer:"Aim to transition into a Full Stack Developer role to broaden my skill set and contribute to end-to-end web development projects."
+  }, 
 ]
 
 const About = () => {
@@ -32,7 +28,7 @@ const About = () => {
       <h2>ABOUT</h2>
     </div>
     <div className="about-content">
-      <p className='about-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima minus, explicabo vitae sed exercitationem tempora?</p>
+      <p className='about-para'>Aim to transition into a Full Stack Developer role to broaden my skill set and contribute to end-to-end web development projects.</p>
      <div className='cooking'>
       <h2 className='quote'>look what's cooking below</h2>
       <PiArrowElbowRightDownDuotone className='icon-quto' />
@@ -146,7 +142,7 @@ color: white;
   z-index: -1;
 }
 .about-outer{
-  height: 500px;
+  height: 80vh;
   margin: 30px; 
 }
 .quote{ 
@@ -282,7 +278,8 @@ color: white;
       width: 100%;
     }
     .right-about{
-      width: 100%;
+      width: 80%;
+      margin: auto;
     }
     .about-para{
       font-size: 14xpx;
@@ -340,5 +337,65 @@ color: white;
  
   }
 }
+  }
+
+  @media screen and (min-width:768px) and (max-width:990px) {
+    .about-content {
+      width: 700px; 
+    }
+    .title h2{
+      font-size: 90px;
+      margin-left: 70px;
+    margin-top: 25px;
+    min-height: 120px;
+    }
+    .about-content{
+      margin-left: 100px;
+    }
+    .cooking{ 
+      margin-top: 50px;  
+       
+    }
+    .about-container{
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+    .rounded-left {
+    border-top-left-radius: 153px;
+    border-bottom-left-radius: 150px;
+    } 
+     .left-about, .answer{
+      padding: 20px 30px;
+     }
+     .icon-quto{
+      font-size: 70px;
+      margin-top: 10px;
+     }
+     .right-about{
+      width: 500px;
+      margin: auto;
+     }
+     .right-about img{
+      margin-top: 10px;
+     }
+  }
+
+  @media screen and (min-width:991px) and (max-width:1200px){
+    .title h2{
+      font-size: 120px;
+      margin-top: 35px;
+      margin-left: 60px;
+    }
+  .about-content {
+    width: 500px; 
+    margin-left: 130px;
+  }
+  .cooking { 
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .right-about{
+    max-width: 550px;
+  }
   }
 ` 

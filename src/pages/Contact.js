@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Contact = () => {
   return ( 
-    <Wrapper>
+    <Wrapper className='page'>
       <div className="formbold-main-wrapper"> 
   <div className="formbold-form-wrapper">
     <form  method="POST">
@@ -64,6 +64,7 @@ const Contact = () => {
 
 export default Contact
 const  Wrapper = styled.div`
+margin-top: 25px;
   .formbold-mb-5 {
     margin-bottom: 20px;
   }

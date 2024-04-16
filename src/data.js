@@ -3,6 +3,8 @@ import Img from "./images/camera.jpg"
 import Quiz from "./images/quiz.PNG"
 import Furniture from "./images/furniture.PNG"
 import unsplash from "./images/unsplash-img.PNG"
+import  node from "./images/node.png";
+
 export const data = [
     {
         id:1,
@@ -29,13 +31,6 @@ export const data = [
 
 export const projects = [
     {
-        id:1,
-        name:"Quiz",
-        img : Quiz,
-        des:"Quiz Webpage where users can select the quiz difficulty by their own",
-        link:"https://github.com/Adnanpatanwala/Quiz"
-    },
-    {
         id:2,
         name:"Unsplash",
         img : unsplash,
@@ -46,9 +41,23 @@ export const projects = [
         id:3,
         name:"Furniture",
         img : Furniture,
-        des : " Ecommerce site where users can purchase furniture",
+        des : "Furniture store Ecommerce",
         link:"https://github.com/Adnanpatanwala/FurnitureStore"
-    }
+    },
+    {
+        id:4,
+        name:"Ecommerce",
+        img : node,
+        des : "backend based on ecommerce",
+        link:"https://github.com/Adnanpatanwala/Ecommerce-Backend"
+    },
+    {
+        id:1,
+        name:"Quiz",
+        img : Quiz,
+        des:"Quiz Webpage",
+        link:"https://github.com/Adnanpatanwala/Quiz"
+    },
 ]
 
  export const experience = [

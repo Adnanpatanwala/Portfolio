@@ -1,84 +1,104 @@
 import React from 'react'
 import styled from 'styled-components'
+import { MdArrowForward } from "react-icons/md";
+
  
 
-const ProjectCard = ({title,img,para}) => {
+const ProjectCard = ({name,img,link,des}) => {
   return (
     <Wrapper>
-        <div className='cardproduct'>
-
-        <div className="header-img">
-            <img src={img} alt="" />
-        </div>
-        <div className="bottom-info">
-            <h3>{title}</h3>
-            <p>{para}</p>
-            <button className='view-btn'>view</button>
-        </div> 
-        </div>
-    </Wrapper>
+    <div className="card-list">
+     <a href={link} className="card-item" target='/'>
+         <img src={img} alt="Card Image" className='brd-img'/>
+         <span className="developer">{name}</span>
+         <h3>{des.substring(0,50)}{des.length>50?"....":""}</h3>
+         <div className="arrow"> 
+         <MdArrowForward className='item-arrow' />
+         </div>
+     </a>
+ </div>
+ </Wrapper>
   )
 }
 
 export default ProjectCard
 const Wrapper = styled.div`
-.cardproduct{
+  
+.card-list {
+    display: grid;  
+    width: 100%;  
+    height: 388px;
+    gap: 20px;
+}
+.card-list .card-item {
+    background: #fff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+}
+ .card-item:hover {
+    box-shadow: 0px 0px 15px var(--texthover);
+         
+}
+.card-list .card-item img {
     width: 100%;
-    height: 400px;
-    border: 1px solid white;
-    background-image: linear-gradient(to right,white 50%,var(--texthover)50%);
-    border-radius: 30px;
-    box-shadow: 5px 5px 0px 0px pink;
-    border: 3px solid pink;
-    overflow: hidden;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
 }
-.cardproduct:has(> .bottom-info button:hover){ 
-    box-shadow: 10px 10px 0px 0px pink;
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
 }
-    .header-img{
-        width: 100%;
-        height: 200px;
-        background-color:  var(--texthover);
-        border-bottom-left-radius: 50px;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-    }
-    .bottom-info{
-        background-color: white;
-        width: 100%;  
-        border-top-right-radius: 50px;
-        padding: 10px;
-        box-sizing: border-box;
-        h3{
-            text-align: center;
-            font-size: 30px;
-            font-weight: 300; 
-        }
-        p{
-            font-size: 14px;
-            font-weight: 300;
-            text-align: center;
-            margin-top: 15px;
-            height: 70px;
-        }
-        button{
-            padding: 3px 15px;
-            border: none;
-            display: block;
-            margin: auto;
-            border-radius: 10px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            font-size: 18px;
-            color: white;
-            background-color: var(--texthover);
-            cursor: pointer;
-        }
-    }
+.card-list .developer {
+    background-color: #d4eeff; 
+    color: var(--texthover);
+}   
+ 
+.card-item h3 {
+    color: #000;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    min-height: 60px;
+}
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: 0.2s ease;
+    font-size: 30px;
+    font-weight: 900;
+}
+.card-list .card-item:hover .arrow  {
+    background: #000;
+    color: #fff; 
+}
 
+.card-item:hover :has(> .item-arrow){
+    transform: rotate(0deg);
+}
+ 
+.brd-img{
     
-
+    box-sizing: border-box;
+}
 `

@@ -17,7 +17,7 @@ const Contact = () => {
           className="formbold-form-input"
         />
       </div>
-
+ 
       <div className="formbold-mb-5">
         <label for="email" className="formbold-form-label"> Email Address </label>
         <input
